@@ -9,7 +9,11 @@
     width: calc(100% - 15px);
     margin-left: 15px;
     border-radius: 10px;
-    border: 1px solid gray;
+    border: none;
+}
+
+.input-area input {
+    width: 100%;
 }
 
 .area{
