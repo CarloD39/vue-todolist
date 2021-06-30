@@ -1,0 +1,49 @@
+.logo {
+    width: 100%;
+}
+#newElement {
+    width: 100%;
+}
+
+.input-area button {
+    width: calc(100% - 15px);
+    margin-left: 15px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.area{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.list-content{
+
+    background-color: rgb(226, 223, 223);
+    list-style: none;
+}
+
+.list-content li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 34px;
+    margin: 0 22px;
+    padding: 0 10px;
+}
+
+.list-content li:hover {
+    background-color: white;
+}
+
+.list-content li i {
+    cursor: pointer;
+}
+
+.list-content li:first-child {
+    margin-top: 18px;
+}
+
+.list-content li:last-child {
+    margin-bottom: 18px;
+}

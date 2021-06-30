@@ -14,23 +14,42 @@
     
     <div id="app">
 
-        <input v-model="newElement" @keyup.enter="addTask" placeholder="Inserisci un nuovo comando" type="text">
-        <button @click="addTask">Aggiungi</button>
+        <div class="container">
+            <div class="row justify-content-center area">
+                <div class="col-4">
+                    <img class="logo" src="img/logo.png" alt="boolean-logo">
+                </div>
+            </div>
 
-        <ul>
-            <li v-for="(lines, index) in listTasks">
+            <div class="row justify-content-center input-area area">
+                <div class="col-8">
+                    <div class="row">
 
-                {{lines}} <i class="fas fa-backspace" @click="deleteTask(index)"></i> 
+                        <div class="col-8 p-0">
+                            <input v-model="newElement" @keyup.enter="addTask" placeholder="Inserisci un nuovo comando" type="text">
+                        </div>
 
-            </li>
-        </ul>
+                        <div class="col-4 p-0">
+                            <button @click="addTask">Aggiungi</button>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center area ">
+                <ul class="col-8 list-content">
+                    <li v-for="(lines, index) in listTasks">
+                        <span>{{lines}}</span>
+                        <i class="fas fa-backspace" @click="deleteTask(index)"></i> 
+        
+                    </li>
+                </ul>
+            </div>
+
+        </div>
 
     </div>
-
-
-
-
 
 
     <script src="js/script.js"></script>
